@@ -1,0 +1,29 @@
+.celebrations-section {
+  min-height: 100vh;  /* ✅ same height as Hero */
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #5c321d 0%, #8c4c33 40%, #fff 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.celebrations-section h2 {
+  font-size: 2rem;
+}
+
+.celebrations-section p {
+  color: #fdfdfd;
+}
+
+/* Feature cards */
+.celebration-card {
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.celebration-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
