@@ -7,7 +7,8 @@ const services = ["Event Planning", "Stage Decoration", "Photography", "Catering
 
 export default function Services() {
   return (
-    <section id="services" className="services-section">
+   <section id="services" className="services-section">
+
       <Container>
         <Row className="align-items-center">
           <Col md={6}>

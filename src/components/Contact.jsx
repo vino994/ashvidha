@@ -4,7 +4,8 @@
 
     export default function Contact() {
     return (
-        <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section">
+
         <Container>
             <motion.h2
             className="text-center mb-4"

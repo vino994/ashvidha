@@ -1,0 +1,21 @@
+/* Transparent on Hero */
+.navbar-transparent {
+  background: transparent !important;
+  transition: all 0.4s ease;
+}
+
+/* Colored when scrolled */
+.navbar-colored {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff416c, #ff4b2b) !important;
+  transition: all 0.4s ease;
+}
+
+.nav-link-custom {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-link-custom:hover {
+  color: #ffe27d !important;
+  transform: scale(1.1);
+}

@@ -12,8 +12,9 @@ function App() {
   return (
     <>
       <NavbarComponent />
-      <Hero />
+        <Hero />
       <Celebrations />
+    
       <Services />
       <Contact />
       <Footer />

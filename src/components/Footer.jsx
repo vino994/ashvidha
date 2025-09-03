@@ -4,9 +4,10 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="footer">
+   <footer id="footer" className="footer">
+
       <Container>
-        <p>© {new Date().getFullYear()} Adithya&apos;s. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Ashvidha&apos;s. All rights reserved.</p>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
