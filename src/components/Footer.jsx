@@ -85,7 +85,7 @@ const sendEmail = (e) => {
             <ul className="list-unstyled footer-contact">
               <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
               <li>
-                <FaPhone /> <a href="tel:+919381234567">+91 93812 34567</a>
+                <FaPhone /> <a href="tel:+919381234567">+919566620863</a>
               </li>
               <li>
                 <FaEnvelope />{" "}
