@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/ashvidha/static/css/main.ee103f0f.css",
-    "main.js": "/ashvidha/static/js/main.6935aaf7.js",
+    "main.css": "/ashvidha/static/css/main.3f332e51.css",
+    "main.js": "/ashvidha/static/js/main.34c5e9fb.js",
     "static/js/453.81a21e4c.chunk.js": "/ashvidha/static/js/453.81a21e4c.chunk.js",
     "static/media/sareehero.png": "/ashvidha/static/media/sareehero.6c2ca8a2c0d048b86f9f.png",
-    "static/media/service.jpg": "/ashvidha/static/media/service.02bd6ba4bdfee990c31b.jpg",
     "static/media/Bridal.jpg": "/ashvidha/static/media/Bridal.7bfb926dd94b96bcc636.jpg",
+    "static/media/saree1.jpeg": "/ashvidha/static/media/saree1.b56bba6b5316e50a1bea.jpeg",
+    "static/media/saree3.jpeg": "/ashvidha/static/media/saree3.c0eae68abbff33c29141.jpeg",
     "static/media/Bangle.jpg": "/ashvidha/static/media/Bangle.9d0fe2cb1fbb09711f44.jpg",
     "static/media/blousehero.jpg": "/ashvidha/static/media/blousehero.0f5dec7021197ff57a80.jpg",
+    "static/media/blouse1.jpeg": "/ashvidha/static/media/blouse1.b54d76ee618d3840928b.jpeg",
     "static/media/rowater.jpg": "/ashvidha/static/media/rowater.ee90df0b97c72ee950de.jpg",
+    "static/media/mehandi1.jpeg": "/ashvidha/static/media/mehandi1.45ac8c771e97961d606c.jpeg",
     "static/media/hero1.webp": "/ashvidha/static/media/hero1.b46f07373d4e9c24bdf1.webp",
+    "static/media/bangle1.jpeg": "/ashvidha/static/media/bangle1.65fb376cb2996a5a837e.jpeg",
+    "static/media/rowater1.jpeg": "/ashvidha/static/media/rowater1.3ecdd89d80d872d5e7fc.jpeg",
     "index.html": "/ashvidha/index.html",
-    "main.ee103f0f.css.map": "/ashvidha/static/css/main.ee103f0f.css.map",
-    "main.6935aaf7.js.map": "/ashvidha/static/js/main.6935aaf7.js.map",
+    "main.3f332e51.css.map": "/ashvidha/static/css/main.3f332e51.css.map",
+    "main.34c5e9fb.js.map": "/ashvidha/static/js/main.34c5e9fb.js.map",
     "453.81a21e4c.chunk.js.map": "/ashvidha/static/js/453.81a21e4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee103f0f.css",
-    "static/js/main.6935aaf7.js"
+    "static/css/main.3f332e51.css",
+    "static/js/main.34c5e9fb.js"
   ]
 }
