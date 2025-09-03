@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashvidha/static/css/main.3f332e51.css",
-    "main.js": "/ashvidha/static/js/main.34c5e9fb.js",
+    "main.js": "/ashvidha/static/js/main.91c47a9e.js",
     "static/js/453.81a21e4c.chunk.js": "/ashvidha/static/js/453.81a21e4c.chunk.js",
     "static/media/sareehero.png": "/ashvidha/static/media/sareehero.6c2ca8a2c0d048b86f9f.png",
     "static/media/Bridal.jpg": "/ashvidha/static/media/Bridal.7bfb926dd94b96bcc636.jpg",
@@ -17,11 +17,11 @@
     "static/media/rowater1.jpeg": "/ashvidha/static/media/rowater1.3ecdd89d80d872d5e7fc.jpeg",
     "index.html": "/ashvidha/index.html",
     "main.3f332e51.css.map": "/ashvidha/static/css/main.3f332e51.css.map",
-    "main.34c5e9fb.js.map": "/ashvidha/static/js/main.34c5e9fb.js.map",
+    "main.91c47a9e.js.map": "/ashvidha/static/js/main.91c47a9e.js.map",
     "453.81a21e4c.chunk.js.map": "/ashvidha/static/js/453.81a21e4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f332e51.css",
-    "static/js/main.34c5e9fb.js"
+    "static/js/main.91c47a9e.js"
   ]
 }
