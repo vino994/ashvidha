@@ -1,25 +1,110 @@
+/* ------------------------------
+   Contact Section (Celebrations Theme)
+------------------------------ */
 .contact-section {
-  background: #fdf1ec;
-  padding: 80px 0;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #5c321d 0%, #8c4c33 40%, #ffd194 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact-section h2 {
-  font-weight: 600;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* Floating bubbles */
+.contact-section::before,
+.contact-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.4), transparent 70%);
+  z-index: 0;
+  will-change: transform;
 }
 
-.contact-section p {
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+.contact-section::before {
+  width: 220px;
+  height: 220px;
+  top: 15%;
+  left: -100px;
+  animation: floatBubble1 18s ease-in-out infinite alternate;
 }
 
-.contact-section iframe {
-  width: 100%;
+.contact-section::after {
+  width: 300px;
   height: 300px;
+  bottom: -120px;
+  right: -150px;
+  background: radial-gradient(circle, rgba(255, 179, 71, 0.4), transparent 70%);
+  animation: floatBubble2 20s ease-in-out infinite alternate;
+}
+
+@keyframes floatBubble1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -60px) scale(1.05); }
+  100% { transform: translate(-30px, 20px) scale(1.1); }
+}
+
+@keyframes floatBubble2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, -40px) scale(1.08); }
+  100% { transform: translate(30px, 30px) scale(1.05); }
+}
+
+/* Content on top */
+.contact-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.contact-title {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ffd700, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contact Cards */
+.contact-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+  border-color: #ffd700;
+}
+
+.contact-card h5 {
+  color: #ffd700;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+/* Icons */
+.contact-icon {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* Map */
+.contact-map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
   border: none;
-  border-radius: 8px;
   margin-top: 2rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }

@@ -1,44 +1,79 @@
 .footer {
-  background: #2a2a2a;
+  background: linear-gradient(135deg, #5c321d 0%, #8c4c33 40%, #ffd194 100%);
   color: #fff;
-  padding: 30px 0;
-  text-align: center;
+  padding: 60px 0 20px;
+  position: relative;
 }
 
-.footer p {
-  margin: 0;
+.footer-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd194;
+}
+
+.footer-text {
   font-size: 0.95rem;
-  opacity: 0.8;
+  margin-top: 10px;
+  line-height: 1.6;
 }
 
-.footer a {
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-.footer a:hover {
-  color: #ffb347;
+.footer-links a:hover {
+  color: #ffd194;
 }
 
-.footer .social-icons {
-  margin-top: 10px;
-}
-
-.footer .social-icons a {
-  display: inline-flex;
+.footer-contact li {
+  margin-bottom: 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 5px;
-  transition: all 0.3s ease;
+  gap: 8px;
+  font-size: 0.95rem;
 }
 
-.footer .social-icons a:hover {
-  background: #ffb347;
-  color: #2a2a2a;
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-form input {
+  border-radius: 50px;
+  border: none;
+}
+
+.footer-form button {
+  background-color: #ffd194;
+  border: none;
+  color: #5c321d;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-form button:hover {
+  background-color: #fff;
+  color: #8c4c33;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 30px 0;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd194;
 }

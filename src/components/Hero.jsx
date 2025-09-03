@@ -108,11 +108,13 @@ export default function Hero() {
             Learn More
           </Button>
           <Button
-            variant="outline-light"
-            className="fw-bold px-5 py-3 rounded-pill"
-          >
-            Contact Us
-          </Button>
+  as="a"
+  href="tel:+919566620863"  // 👈 replace with your number
+  variant="outline-light"
+  className="fw-bold px-5 py-3 rounded-pill"
+>
+  📞 Contact Us
+</Button>
         </motion.div>
       </Container>
     </section>

@@ -35,12 +35,14 @@ export default function NavbarComponent() {
             <ScrollLink to="about" smooth duration={600} className="nav-link-custom">About</ScrollLink>
             <ScrollLink to="gallery" smooth duration={600} className="nav-link-custom">Gallery</ScrollLink>
             <ScrollLink to="contact" smooth duration={600} className="nav-link-custom">Contact</ScrollLink>
-            <Button
-              href="#booking"
-              className="book-btn fw-bold rounded-pill px-4 py-2"
-            >
-              Book Now
-            </Button>
+           <Button
+  as="a"
+  href="tel:+919566620863"  // 👈 your phone number here
+  className="book-btn fw-bold rounded-pill px-4 py-2"
+>
+  📞 Book Now
+</Button>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,34 +1,122 @@
+/* ------------------------------
+   Services Section (Celebrations Theme)
+------------------------------ */
 .services-section {
-  padding: 80px 0;
-}
-
-.services-section h2 {
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.services-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.services-section ul li {
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 500;
+  min-height: 100vh;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #5c321d 0%, #8c4c33 40%, #ffd194 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.services-section ul li::before {
-  content: "✔";
-  color: #5c321d;
-  font-weight: bold;
+/* Floating gradient bubbles */
+.services-section::before,
+.services-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.4), transparent 70%);
+  z-index: 0;
+  will-change: transform;
 }
 
-.services-section img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.services-section::before {
+  width: 280px;
+  height: 280px;
+  top: 15%;
+  left: -120px;
+  animation: floatBubble1 18s ease-in-out infinite alternate;
+}
+
+.services-section::after {
+  width: 350px;
+  height: 350px;
+  bottom: -150px;
+  right: -180px;
+  background: radial-gradient(circle, rgba(255, 179, 71, 0.4), transparent 70%);
+  animation: floatBubble2 22s ease-in-out infinite alternate;
+}
+
+@keyframes floatBubble1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, -70px) scale(1.08); }
+  100% { transform: translate(-30px, 40px) scale(1.1); }
+}
+
+@keyframes floatBubble2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, -50px) scale(1.05); }
+  100% { transform: translate(30px, 30px) scale(1.1); }
+}
+
+/* Keep content above bubbles */
+.services-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.services-title {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ffd700, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text */
+.services-text {
+  font-size: 1.15rem;
+  color: #fdfdfd;
+}
+
+/* Filter buttons */
+.filter-btn {
+  border: 1px solid #ffd700 !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #ffd700 !important;
+  color: #5c321d !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* Service Cards */
+.service-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+  border-color: #ffd700;
+}
+
+.service-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.service-card p.text-small {
+  font-size: 0.9rem;
+  color: #eee !important;
+  margin: 0;
+}
+
+.service-img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
 }
