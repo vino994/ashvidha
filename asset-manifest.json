@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/ashvidha/static/css/main.c851f225.css",
-    "main.js": "/ashvidha/static/js/main.a40a8d9f.js",
+    "main.css": "/ashvidha/static/css/main.ee103f0f.css",
+    "main.js": "/ashvidha/static/js/main.6935aaf7.js",
     "static/js/453.81a21e4c.chunk.js": "/ashvidha/static/js/453.81a21e4c.chunk.js",
+    "static/media/sareehero.png": "/ashvidha/static/media/sareehero.6c2ca8a2c0d048b86f9f.png",
     "static/media/service.jpg": "/ashvidha/static/media/service.02bd6ba4bdfee990c31b.jpg",
-    "static/media/hero2.jpg": "/ashvidha/static/media/hero2.bd1eae22a14b15f3639e.jpg",
-    "static/media/hero3.jpeg": "/ashvidha/static/media/hero3.599e9d089953414cbfb6.jpeg",
+    "static/media/Bridal.jpg": "/ashvidha/static/media/Bridal.7bfb926dd94b96bcc636.jpg",
+    "static/media/Bangle.jpg": "/ashvidha/static/media/Bangle.9d0fe2cb1fbb09711f44.jpg",
+    "static/media/blousehero.jpg": "/ashvidha/static/media/blousehero.0f5dec7021197ff57a80.jpg",
+    "static/media/rowater.jpg": "/ashvidha/static/media/rowater.ee90df0b97c72ee950de.jpg",
     "static/media/hero1.webp": "/ashvidha/static/media/hero1.b46f07373d4e9c24bdf1.webp",
     "index.html": "/ashvidha/index.html",
-    "main.c851f225.css.map": "/ashvidha/static/css/main.c851f225.css.map",
-    "main.a40a8d9f.js.map": "/ashvidha/static/js/main.a40a8d9f.js.map",
+    "main.ee103f0f.css.map": "/ashvidha/static/css/main.ee103f0f.css.map",
+    "main.6935aaf7.js.map": "/ashvidha/static/js/main.6935aaf7.js.map",
     "453.81a21e4c.chunk.js.map": "/ashvidha/static/js/453.81a21e4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c851f225.css",
-    "static/js/main.a40a8d9f.js"
+    "static/css/main.ee103f0f.css",
+    "static/js/main.6935aaf7.js"
   ]
 }
