@@ -68,47 +68,53 @@ const sendEmail = (e) => {
 
           {/* Quick Links */}
         {/* Quick Links */}
-<Col md={2} sm={6}>
+{/* Desktop Layout */}
+<Col md={2} className="d-none d-md-block">
   <h5 className="fw-bold">Quick Links</h5>
   <ul className="list-unstyled footer-links">
-    <li>
-      <a href="#about">
-        <i className="bi bi-info-circle-fill me-2"></i>About
-      </a>
-    </li>
-    <li>
-      <a href="#services">
-        <i className="bi bi-briefcase-fill me-2"></i>Services
-      </a>
-    </li>
-    <li>
-      <a href="#!" onClick={(e) => { e.preventDefault(); openGallery(); }}>
-        <i className="bi bi-images me-2"></i>Gallery
-      </a>
-    </li>
-    <li>
-      <a href="#contact">
-        <i className="bi bi-telephone-fill me-2"></i>Contact
-      </a>
-    </li>
+    <li><a href="#about"><i className="bi bi-info-circle-fill me-2"></i>About</a></li>
+    <li><a href="#services"><i className="bi bi-briefcase-fill me-2"></i>Services</a></li>
+    <li><a href="#!" onClick={(e) => { e.preventDefault(); openGallery(); }}><i className="bi bi-images me-2"></i>Gallery</a></li>
+    <li><a href="#contact"><i className="bi bi-telephone-fill me-2"></i>Contact</a></li>
   </ul>
 </Col>
 
+<Col md={3} className="d-none d-md-block">
+  <h5 className="fw-bold">Contact Us</h5>
+  <ul className="list-unstyled footer-contact">
+    <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
+    <li><FaPhone /> <a href="tel:+918682889813">+918682889813</a></li>
+    <li><FaEnvelope /> <a href="mailto:info@ashvidhas.com">g.subasri0302@gmail.com</a></li>
+  </ul>
+</Col>
+
+{/* Mobile Layout */}
+<Col xs={12} className="d-md-none">
+  <div className="footer-mobile-row">
+    <div className="footer-links-mobile">
+      <h5 className="fw-bold">Quick Links</h5>
+      <ul className="list-unstyled footer-links">
+        <li><a href="#about"><i className="bi bi-info-circle-fill me-2"></i>About</a></li>
+        <li><a href="#services"><i className="bi bi-briefcase-fill me-2"></i>Services</a></li>
+        <li><a href="#!" onClick={(e) => { e.preventDefault(); openGallery(); }}><i className="bi bi-images me-2"></i>Gallery</a></li>
+        <li><a href="#contact"><i className="bi bi-telephone-fill me-2"></i>Contact</a></li>
+      </ul>
+    </div>
+    <div className="footer-contact-mobile">
+      <h5 className="fw-bold">Contact Us</h5>
+      <ul className="list-unstyled footer-contact">
+        <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
+        <li><FaPhone /> <a href="tel:+918682889813">+918682889813</a></li>
+        <li><FaEnvelope /> <a href="mailto:info@ashvidhas.com">g.subasri0302@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</Col>
+
+
 
           {/* Contact */}
-          <Col md={3} sm={6}>
-            <h5 className="fw-bold">Contact Us</h5>
-            <ul className="list-unstyled footer-contact">
-              <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
-              <li>
-                <FaPhone /> <a href="tel:+918682889813">+918682889813</a>
-              </li>
-              <li>
-                <FaEnvelope />{" "}
-                <a href="mailto:info@ashvidhas.com">g.subasri0302@gmail.com</a>
-              </li>
-            </ul>
-          </Col>
+       
 
           {/* Subscribe Form */}
           <Col md={3}>

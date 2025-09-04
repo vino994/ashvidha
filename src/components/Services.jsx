@@ -32,13 +32,13 @@ export default function Services() {
                   <h5 className="card-title-gold mb-2">{s.title}</h5>
                   <p className="card-text-contrast mb-3">{s.text}</p>
                   <div className="mt-auto">
-                    <Button
-                      size="sm"
-                      className="btn-learn"
-                      onClick={() => openWithSlide(s)}
-                    >
-                      Learn More
-                    </Button>
+                  <Button
+    size="sm"
+    className="btn-learn border-0 mt-3"
+    onClick={() => openWithSlide(s)}
+  >
+    Learn More
+  </Button>
                   </div>
                 </Card.Body>
               </Card>

@@ -43,22 +43,23 @@ export default function Celebrations() {
           <Col md={6}>
             <Row className="g-4">
               {slides.map((s) => (
-                <Col xs={6} key={s.title}>
-                  <Card className="celebration-card theme-surface shadow-sm text-center">
-                    <Card.Body>
-                      <div className="icon-wrapper mb-3">
-                        {iconMap[s.title] ?? <FaAlignJustify />}
-                      </div>
-                      <h6 className="fw-semibold card-title-gold">{s.title}</h6>
-                      <p className="text-small card-text-contrast">{s.text}</p>
-                      <Button
-                        size="sm"
-                        className="btn-learn"
-                        onClick={() => openWithSlide(s)}
-                      >
-                        Learn More
-                      </Button>
-                    </Card.Body>
+                <Col xs={6} key={s.title} className="d-flex">
+                  <Card className="celebration-card theme-surface shadow-sm text-center flex-fill">
+                  <Card.Body className="d-flex flex-column">
+  <div className="icon-wrapper mb-3">
+    {iconMap[s.title] ?? <FaAlignJustify />}
+  </div>
+  <h6 className="fw-semibold card-title-gold">{s.title}</h6>
+  <p className="text-small card-text-contrast flex-grow-1">{s.text}</p>
+  <Button
+    size="sm"
+    className="btn-learn border-0 mt-3"
+    onClick={() => openWithSlide(s)}
+  >
+    Learn More
+  </Button>
+</Card.Body>
+
                   </Card>
                 </Col>
               ))}

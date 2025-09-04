@@ -77,3 +77,29 @@
 .social-icons a:hover {
   color: #ffd194;
 }
+/* ===== Mobile Horizontal Layout for Quick Links & Contact ===== */
+.footer-mobile-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-links-mobile,
+.footer-contact-mobile {
+  width: 48%;
+}
+
+/* Optional: fine-tune font size for compact mobile view */
+.footer-links-mobile ul li,
+.footer-contact-mobile ul li {
+  font-size: 0.9rem;
+}
+
+/* On larger screens, hide the mobile version */
+@media (min-width: 768px) {
+  .footer-mobile-row {
+    display: none;
+  }
+}

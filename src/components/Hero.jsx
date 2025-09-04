@@ -33,9 +33,12 @@ export default function Hero() {
         <h1 className="display-3 fw-bold mb-3">{slide.title}</h1>
         <p className="lead mb-4">{slide.text}</p>
         <div>
-          <Button className="hero-btn fw-bold px-5 py-3 rounded-pill me-3" onClick={() => openWithSlide(slide)}>
-            Learn More
-          </Button>
+    <Button
+  className="hero-learn-btn fw-bold px-5 py-3 rounded-pill me-3"
+  onClick={() => openWithSlide(slide)}
+>
+  Learn More
+</Button>
           <Button
             as="a"
             href="tel:+918682889813"

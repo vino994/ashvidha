@@ -43,7 +43,7 @@ export default function NavbarComponent() {
             <Button
               as="a"
               href="tel:+918682889813"
-              className="book-btn fw-bold rounded-pill px-4 py-2"
+               className="hero-learn-btn fw-bold px-4 py-2 rounded-pill me-3"
             >
               📞 Book Now
             </Button>

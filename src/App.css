@@ -88,11 +88,29 @@ section { position: relative; width: 100%; }
   .hero-banner-content p { font-size: 1rem; }
   .hero-banner-content .btn { display: block; width: 100%; margin-bottom: 10px; }
 }
+.white-btn {
+  color: #fff !important;
+}
 .hero-btn {
-  background: #ffe27d; color: #000 !important; border: none; font-weight: 600;
+  background: #ffe27d; color: #e4dada !important; border: none; font-weight: 600;
   transition: all .3s ease; box-shadow: 0 4px 12px rgba(255,215,0,.4);
 }
 .hero-btn:hover { background: #ffda44; transform: translateY(-3px); box-shadow: 0 6px 16px rgba(255,215,0,.6); }
+
+.hero-learn-btn {
+  background: linear-gradient(135deg, #c48f3a, #e1a948);
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(196, 143, 58, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero-learn-btn:hover {
+  background: linear-gradient(135deg, #d89d36, #f0be5d);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(196, 143, 58, 0.6);
+}
 
 /* ==============================
    Shared Theme: Cards
