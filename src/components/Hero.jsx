@@ -38,7 +38,7 @@ export default function Hero() {
           </Button>
           <Button
             as="a"
-            href="tel:+919566620863"
+            href="tel:+918682889813"
             variant="outline-light"
             className="fw-bold px-5 py-3 rounded-pill"
           >

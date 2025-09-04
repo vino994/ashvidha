@@ -78,7 +78,7 @@ export default function ServiceModal() {
       </Modal.Body>
 
       <Modal.Footer className="service-modal-footer">
-        <Button as="a" href="tel:+919566620863" className="btn-call">
+        <Button as="a" href="tel:+918682889813" className="btn-call">
           Call to Book
         </Button>
         <Button variant="outline-secondary" onClick={() => setIsOpen(false)}>
