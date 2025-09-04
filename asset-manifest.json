@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ashvidha/static/css/main.b07bb701.css",
-    "main.js": "/ashvidha/static/js/main.aa08de65.js",
+    "main.css": "/ashvidha/static/css/main.05376336.css",
+    "main.js": "/ashvidha/static/js/main.be33f7f9.js",
     "static/media/sareehero.png": "/ashvidha/static/media/sareehero.6c2ca8a2c0d048b86f9f.png",
     "static/media/wimage (83).jpeg": "/ashvidha/static/media/wimage (83).1a4fb2da7fc6e01e837f.jpeg",
     "static/media/Bridal.jpg": "/ashvidha/static/media/Bridal.7bfb926dd94b96bcc636.jpg",
@@ -96,11 +96,11 @@
     "static/media/wimage (23).jpeg": "/ashvidha/static/media/wimage (23).880e3ae3b99ceb3ce62d.jpeg",
     "static/media/wimage (22).jpeg": "/ashvidha/static/media/wimage (22).da91233e19fa7e23707d.jpeg",
     "index.html": "/ashvidha/index.html",
-    "main.b07bb701.css.map": "/ashvidha/static/css/main.b07bb701.css.map",
-    "main.aa08de65.js.map": "/ashvidha/static/js/main.aa08de65.js.map"
+    "main.05376336.css.map": "/ashvidha/static/css/main.05376336.css.map",
+    "main.be33f7f9.js.map": "/ashvidha/static/js/main.be33f7f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b07bb701.css",
-    "static/js/main.aa08de65.js"
+    "static/css/main.05376336.css",
+    "static/js/main.be33f7f9.js"
   ]
 }
