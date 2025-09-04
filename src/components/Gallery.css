@@ -1,0 +1,115 @@
+/* Uses brand tokens from :root in App.css */
+
+/* Modal shell themed like your ServiceModal */
+.gallery-modal {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-strong);
+}
+.gallery-modal-header {
+  background: linear-gradient(135deg, var(--brand-brown-900), var(--brand-brown-800), var(--brand-brown-700));
+  color: var(--brand-gold);
+  border-bottom: 1px solid rgba(255, 216, 107, 0.3);
+}
+.gallery-modal .modal-title {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.gallery-modal-body {
+  background: linear-gradient(135deg, var(--light-parchment), var(--light-parchment-2));
+  color: var(--text-dark);
+  padding: 1rem 1rem 1.25rem;
+}
+.gallery-modal-footer {
+  background: linear-gradient(90deg, var(--neutral-band), #fdfaf4);
+  border-top: 1px solid rgba(42,30,22,.08);
+}
+
+/* Masonry with CSS columns (mobile-friendly) */
+.masonry {
+  column-count: 1;
+  column-gap: 12px;
+}
+@media (min-width: 576px)  { .masonry { column-count: 3; column-gap: 12px; } }
+@media (min-width: 992px)  { .masonry { column-count: 4; column-gap: 14px; } }
+@media (min-width: 1400px) { .masonry { column-count: 5; column-gap: 16px; } }
+@media (max-width: 360px) {
+  .masonry { column-count: 1; }
+}
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+
+  /* prevent column breaks */
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
+.masonry-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  background: #eee;                 /* nice while low-res loads */
+  object-fit: cover;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.masonry-img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.18);
+}
+
+/* Empty state */
+.gallery-empty {
+  text-align: center;
+  padding: 24px;
+  opacity: .7;
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.8);
+  display: grid; place-items: center;
+  z-index: 1056; /* above Bootstrap modal */
+}
+.lightbox-inner {
+  position: relative;
+  max-width: 92vw; max-height: 92vh;
+}
+.lightbox-img {
+  max-width: 92vw; max-height: 92vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.5);
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.25);
+  width: 42px; height: 42px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 22px; cursor: pointer;
+  transition: background .2s ease, transform .1s ease;
+}
+.lightbox-close { top: -18px; right: -18px; transform: none; font-size: 26px; }
+.lightbox-prev { left: -56px; }
+.lightbox-next { right: -56px; }
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover { background: rgba(255,255,255,.25); }
+@media (max-width: 576px) {
+  .lightbox-prev { left: 6px; }
+  .lightbox-next { right: 6px; }
+}

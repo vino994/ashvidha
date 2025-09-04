@@ -80,7 +80,7 @@
 
 /* Feature Cards */
 .celebration-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: red !important;
   border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 16px;
   backdrop-filter: blur(8px);

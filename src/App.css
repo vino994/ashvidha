@@ -1,41 +1,45 @@
-/* ------------------------------
-   Global Styles
------------------------------- */
-html {
-  scroll-behavior: smooth;
+/* ==============================
+   Global Tokens
+============================== */
+:root {
+  --brand-gold: #d6eb18;
+  --brand-gold-strong: #ffd700;
+  --brand-gold-accent: #ffb347;
+  --brand-brown-900: #2a1e16;
+  --brand-brown-800: #3d2b22;
+  --brand-brown-700: #5c4334;
+  --light-parchment: #fffaf0;
+  --light-parchment-2: #fefcf7;
+  --neutral-band: #f8f3e6;
+  --text-dark: #2a1e16;
+  --text-muted: #3a2a1f;
+  --shadow-strong: 0 10px 35px rgba(0,0,0,.45);
+  --shadow-soft: 0 6px 16px rgba(0,0,0,.15);
 }
+
+html { scroll-behavior: smooth; }
 
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
   color: #333;
-  background-color: #fff;
+  background: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
+h1,h2,h3,h4,h5,h6 { font-weight: 600; }
+section { position: relative; width: 100%; }
 
-section {
-  position: relative;
-  width: 100%;
-}
-
-/* ------------------------------
+/* ==============================
    Navbar
------------------------------- */
-.navbar {
-  font-weight: 500;
-}
+============================== */
+.navbar { font-weight: 500; }
 
 .custom-navbar {
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff416c, #ff4b2b);
   animation: gradientMove 8s ease infinite;
   background-size: 300% 300%;
 }
-
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -45,10 +49,9 @@ section {
 .nav-link-custom {
   color: white !important;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
   position: relative;
 }
-
 .nav-link-custom:hover {
   color: #ffe27d !important;
   transform: scale(1.1);
@@ -59,104 +62,96 @@ section {
   color: #000 !important;
   border: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
 }
-
 .book-btn:hover {
   background: #ffda44;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(255, 215, 0, 0.6);
 }
 
-/* ------------------------------
-   Hero Banner
------------------------------- */
-.hero-banner {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero-banner-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-}
-
+/* ==============================
+   Hero
+============================== */
+.hero-banner { position: relative; height: 100vh; width: 100%; overflow: hidden; }
+.hero-banner-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.hero-banner-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.55); z-index: 1; }
 .hero-banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  width: 100%;
-  padding: 0 20px;
-  color: #fff;
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  z-index: 2; text-align: center; width: 100%; padding: 0 20px; color: #fff;
 }
-
-.hero-banner-content h1 {
-  font-size: 3rem;
-}
-
-.hero-banner-content p {
-  font-size: 1.2rem;
-}
-
+.hero-banner-content h1 { font-size: 3rem; }
+.hero-banner-content p { font-size: 1.2rem; }
 @media (max-width: 768px) {
-  .hero-banner-content h1 {
-    font-size: 2rem;
-  }
-  .hero-banner-content p {
-    font-size: 1rem;
-  }
-  .hero-banner-content .btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  .hero-banner-content h1 { font-size: 2rem; }
+  .hero-banner-content p { font-size: 1rem; }
+  .hero-banner-content .btn { display: block; width: 100%; margin-bottom: 10px; }
 }
-
 .hero-btn {
-  background: #ffe27d;
-  color: #000 !important;
+  background: #ffe27d; color: #000 !important; border: none; font-weight: 600;
+  transition: all .3s ease; box-shadow: 0 4px 12px rgba(255,215,0,.4);
+}
+.hero-btn:hover { background: #ffda44; transform: translateY(-3px); box-shadow: 0 6px 16px rgba(255,215,0,.6); }
+
+/* ==============================
+   Shared Theme: Cards
+============================== */
+.theme-surface {
+  background: rgba(90, 36, 4, 0.78) !important;
+  border: 1px solid rgba(255,216,107,.35);
+  border-radius: 16px;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.theme-surface:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(255,216,107,.28);
+  border-color: var(--brand-gold);
+}
+
+.card-title-gold { color: var(--brand-gold); font-size: 1rem; font-weight: 600; }
+.card-text-contrast { color: rgba(235, 220, 154, 0.9) !important; font-size: .95rem; line-height: 1.4; }
+
+.btn-learn {
+  background: linear-gradient(135deg, var(--brand-gold-strong), var(--brand-gold-accent));
+  color: #2a1e16 !important;
   border: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  font-weight: 700;
+  padding: .4rem .95rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(255,215,0,.35);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-learn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255,215,0,.55);
+  filter: brightness(1.05);
 }
 
-.hero-btn:hover {
-  background: #ffda44;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.6);
-}
-
-/* ------------------------------
+/* ==============================
    Celebrations Section
------------------------------- */
+============================== */
 .celebrations-section {
   min-height: 100vh;
   padding: 100px 0;
   background: linear-gradient(135deg, #5c321d 0%, #8c4c33 40%, #ffd194 100%);
   color: #fff;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
 }
+.celebrations-section::before,
+.celebrations-section::after {
+  content: ""; position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,215,0,.4), transparent 70%);
+  z-index: 0; will-change: transform;
+}
+.celebrations-section::before { width: 250px; height: 250px; top: 20%; left: -100px; animation: floatBubble1 15s ease-in-out infinite alternate; }
+.celebrations-section::after  { width: 350px; height: 350px; bottom: -120px; right: -150px; background: radial-gradient(circle, rgba(255,179,71,.4), transparent 70%); animation: floatBubble2 20s ease-in-out infinite alternate; }
+@keyframes floatBubble1 { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(40px,-60px) scale(1.05)} 100%{transform:translate(-30px,20px) scale(1.1)} }
+@keyframes floatBubble2 { 0%{transform:translate(0,0) scale(1)} 50%{transform:translate(-50px,-40px) scale(1.08)} 100%{transform:translate(30px,30px) scale(1.05)} }
+.celebrations-section > .container { position: relative; z-index: 2; }
 
 .celebrations-title {
   font-size: 2.5rem;
@@ -164,152 +159,80 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.celebrations-text {
-  font-size: 1.15rem;
-  color: #fdfdfd;
-}
-
-.highlight {
-  color: #ffd700;
-  font-weight: 600;
-}
-
-.celebration-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #fff;
-  padding: 20px;
-}
-
-.celebration-card:hover {
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
-  border-color: #ffd700;
-}
-
-.celebration-card h6 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffd700;
-}
-
-.celebration-card p.text-small {
-  font-size: 0.9rem;
-  color: #eee !important;
-  margin: 0;
-}
+.celebrations-text { font-size: 1.15rem; color: #fdfdfd; }
+.highlight { color: var(--brand-gold); font-weight: 600; }
 
 .icon-wrapper {
-  font-size: 2rem;
-  color: #ffd700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
+  font-size: 2rem; color: var(--brand-gold);
+  display: flex; justify-content: center; align-items: center;
+  transition: transform .3s ease, text-shadow .2s ease;
 }
+.icon-wrapper:hover { transform: scale(1.12) rotate(6deg); text-shadow: 0 0 12px rgba(255,216,107,.35); }
 
-/* ------------------------------
+/* ==============================
    Services Section
------------------------------- */
+============================== */
 .services-section {
+  min-height: 100vh;
   padding: 100px 0;
+  background: linear-gradient(135deg, #5c321d 0%, #8c4c33 40%, #ffd194 100%);
+  color: #fff;
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+}
+.services-section > .container { position: relative; z-index: 2; }
+.services-title {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ffd700, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-text { font-size: 1.15rem; color: #fdfdfd; }
+.service-img { height: 200px; object-fit: cover; border-bottom: 1px solid rgba(255,215,0,.2); }
+
+/* ==============================
+   Service Modal
+============================== */
+.service-modal { border: none; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-strong); }
+.service-modal-header {
+  background: linear-gradient(135deg, var(--brand-brown-900), var(--brand-brown-800) 60%, var(--brand-brown-700));
+  color: var(--brand-gold);
+  border-bottom: 1px solid rgba(255,216,107,.3);
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+.service-modal .modal-title { font-weight: 700; letter-spacing: .5px; font-size: 1.4rem; }
+.service-modal .modal-body {
+  background: linear-gradient(135deg, var(--light-parchment), var(--light-parchment-2));
+  color: var(--text-dark);
+  padding: 1.5rem;
+}
+.service-modal .modal-footer {
+  background: linear-gradient(90deg, var(--neutral-band), #fdfaf4);
+  border-top: 1px solid rgba(42,30,22,.08);
+}
+.badge-neutral { background: #e9d9bb !important; color: var(--text-dark) !important; font-weight: 500; }
+.badge-warning { background: linear-gradient(45deg, var(--brand-gold), #ffc847) !important; color: var(--text-dark) !important; font-weight: 600; }
+.service-modal .btn-call {
+  background: linear-gradient(135deg, var(--brand-gold-strong), var(--brand-gold-accent));
+  border: none; color: #000; font-weight: 700; padding: .6rem 1.4rem; border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(255,215,0,.35); transition: all .3s ease;
+}
+.service-modal .btn-call:hover { background: linear-gradient(135deg, #ffe27d, #ffc107); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(255,215,0,.5); }
+.service-modal .list-group-item {
+  background: transparent; border: none; padding: .45rem 0; font-size: .95rem; color: var(--text-muted);
+  position: relative; padding-left: 1.2rem;
+}
+.service-modal .list-group-item::before {
+  content: "➤"; color: #c48f3a; font-size: .75rem; position: absolute; left: 0; top: 8px;
 }
 
-.services-section h2 {
-  margin-bottom: 1.5rem;
-}
-
-.services-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.services-section ul li {
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.services-section ul li::before {
-  content: "✔";
-  color: #5c321d;
-  font-weight: bold;
-}
-
-.services-section img {
-  border-radius: 12px;
-  max-width: 100%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* ------------------------------
-   Contact Section
------------------------------- */
-.contact-section {
-  background: #fdf1ec;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.contact-section h2 {
-  font-weight: 600;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.contact-section p {
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
-}
-
-.contact-section iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 2rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* ------------------------------
+/* ==============================
    Footer
------------------------------- */
-.footer {
-  background: #2a2a2a;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
-
-.footer .social-icons {
-  margin-top: 10px;
-}
-
+============================== */
+.footer { background: #2a2a2a; color: #fff; text-align: center; padding: 30px 0; }
+.footer p { margin: 0; font-size: .95rem; opacity: .8; }
+.footer .social-icons { margin-top: 10px; }
 .footer .social-icons a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.2rem;
-  display: inline-block;
-  transition: 0.3s;
+  color: #fff; margin: 0 10px; font-size: 1.2rem; display: inline-block; transition: .3s;
 }
-
-.footer .social-icons a:hover {
-  color: #ffb347;
-}
-  /* ------------------------------
-   Celebrations Section
------------------------------- */
+.footer .social-icons a:hover { color: #ffb347; }

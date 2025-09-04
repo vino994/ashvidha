@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import NavbarComponent from "./components/NavbarComponent";
 import Hero from "./components/Hero";
 import Celebrations from "./components/Celebrations";
@@ -8,18 +8,23 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+import ServiceModal from "./components/ServiceModal";
+import GalleryModal from "./components/GalleryModal";
+
+export default function App() {
   return (
     <>
       <NavbarComponent />
-        <Hero />
+
+      <Hero />
       <Celebrations />
-    
       <Services />
       <Contact />
       <Footer />
+
+      {/* Mount modals once anywhere inside Providers (Providers are in index.jsx) */}
+      <ServiceModal />
+      <GalleryModal />
     </>
   );
 }
-
-export default App;

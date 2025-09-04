@@ -65,7 +65,7 @@
 
 /* Contact Cards */
 .contact-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(214, 33, 33, 0.08) !important;
   border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 16px;
   backdrop-filter: blur(8px);
@@ -107,4 +107,97 @@
   border: none;
   margin-top: 2rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* Inherit brand tokens from App.css :root */
+
+.themed-contact {
+  /* gold–brown luxury gradient, with a soft vignette */
+  background:
+    radial-gradient(1200px 600px at 120% -10%, rgba(255, 216, 107, 0.25), transparent 60%),
+    radial-gradient(1000px 500px at -10% 110%, rgba(92, 67, 52, 0.35), transparent 60%),
+    linear-gradient(135deg, var(--brand-brown-900) 0%, var(--brand-brown-800) 38%, var(--brand-brown-700) 62%, #6b4f3e 100%);
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-title {
+  color: var(--brand-gold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contact-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 215, 0, 0.28);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(255, 215, 0, 0.28);
+  border-color: var(--brand-gold-strong);
+}
+
+.contact-card:active {
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  color: #2a1e16;
+  background: linear-gradient(135deg, var(--brand-gold-strong), var(--brand-gold-accent));
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.35);
+}
+
+.contact-card h5 {
+  color: var(--brand-gold);
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  color: #f2ede6;
+  margin-bottom: 6px;
+}
+
+.card-cta {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #866a15;
+  opacity: 0.85;
+}
+
+/* Map styling */
+.contact-map {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  outline: 1px solid rgba(255, 215, 0, 0.22);
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .contact-icon { width: 52px; height: 52px; font-size: 1.1rem; }
+  .contact-map { height: 280px; }
 }

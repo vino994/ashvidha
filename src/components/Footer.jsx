@@ -5,20 +5,18 @@ import emailjs from "@emailjs/browser";
 
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaYoutube 
 } from "react-icons/fa";
 import "./Footer.css";
-
+import { useGalleryModal } from "../contexts/GalleryModalContext";
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
-
+const { openGallery } = useGalleryModal(); 
 const sendEmail = (e) => {
   e.preventDefault();
 
@@ -69,15 +67,33 @@ const sendEmail = (e) => {
           </Col>
 
           {/* Quick Links */}
-          <Col md={2} sm={6}>
-            <h5 className="fw-bold">Quick Links</h5>
-            <ul className="list-unstyled footer-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </Col>
+        {/* Quick Links */}
+<Col md={2} sm={6}>
+  <h5 className="fw-bold">Quick Links</h5>
+  <ul className="list-unstyled footer-links">
+    <li>
+      <a href="#about">
+        <i className="bi bi-info-circle-fill me-2"></i>About
+      </a>
+    </li>
+    <li>
+      <a href="#services">
+        <i className="bi bi-briefcase-fill me-2"></i>Services
+      </a>
+    </li>
+    <li>
+      <a href="#!" onClick={(e) => { e.preventDefault(); openGallery(); }}>
+        <i className="bi bi-images me-2"></i>Gallery
+      </a>
+    </li>
+    <li>
+      <a href="#contact">
+        <i className="bi bi-telephone-fill me-2"></i>Contact
+      </a>
+    </li>
+  </ul>
+</Col>
+
 
           {/* Contact */}
           <Col md={3} sm={6}>
@@ -85,7 +101,7 @@ const sendEmail = (e) => {
             <ul className="list-unstyled footer-contact">
               <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
               <li>
-                <FaPhone /> <a href="tel:+919381234567">+919566620863</a>
+                <FaPhone /> <a href="tel:+918682889813">+918682889813</a>
               </li>
               <li>
                 <FaEnvelope />{" "}
@@ -124,7 +140,7 @@ const sendEmail = (e) => {
           </Col>
           <Col md={6} className="text-center text-md-end">
             <div className="social-icons">
-              <motion.a whileHover={{ scale: 1.2 }} href="https://www.instagram.com/rowater20242024?utm_source=qr&igsh=YWp1dDJhbnI2cWVx">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.facebook.com/share/19tBWeUUtq/">
                 <FaFacebookF />
               </motion.a>
              <motion.a whileHover={{ scale: 1.2 }} href="https://www.youtube.com/@chennai-45" target="_blank" rel="noopener noreferrer">

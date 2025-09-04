@@ -1,89 +1,65 @@
+// src/components/Celebrations.jsx
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { motion } from "framer-motion";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { slides } from "../data/services";
+import { useServiceModal } from "../contexts/ServiceModalContext";
 import {
-  FaPaintBrush,
-  FaCalendarAlt,
-  FaGem,
+  FaAlignJustify,
+  FaRing,
+  FaCut,
   FaFemale,
+  FaPaintBrush,
   FaTint,
 } from "react-icons/fa";
+import "../App.css"; // ensure styles are loaded
 
-const features = [
-  {
-    icon: <FaPaintBrush />,
-    title: "Mehndi Design",
-    text: "Artistic mehndi patterns for every occasion.",
-  },
-  {
-    icon: <FaCalendarAlt />,
-    title: "Event Planning",
-    text: "Tailored planning for weddings and events.",
-  },
-  {
-    icon: <FaGem />,
-    title: "Stage Decoration",
-    text: "Elegant and custom stage designs.",
-  },
-  {
-    icon: <FaFemale />,
-    title: "Makeup & Styling",
-    text: "Professional makeup and style for brides.",
-  },
-  {
-    icon: <FaTint />,
-    title: "RO Water Service",
-    text: "Reliable RO water installation and maintenance for clean, safe drinking water.",
-  },
-];
+const iconMap = {
+  "Saree Pre-Pleating & Draping": <FaAlignJustify />,
+  "Thread Bangle Making": <FaRing />,
+  "Blouse Designing": <FaCut />,
+  "Bridal Makeup & Styling": <FaFemale />,
+  "Mehndi Art": <FaPaintBrush />,
+  "RO Water Fixing & Service": <FaTint />,
+};
 
 export default function Celebrations() {
+  const { openWithSlide } = useServiceModal();
+
   return (
     <section id="about" className="celebrations-section">
       <Container>
         <Row className="align-items-center">
-          {/* Left Content */}
           <Col md={6}>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="fw-bold mb-3 celebrations-title">
-                Celebrations & Solutions, <br /> Under One Roof ✨
-              </h2>
-              <h5 className="lead celebrations-text">
-                From mehndi design to wedding décor, event planning, and even{" "}
-                <span className="highlight">RO water services</span>, we provide
-                complete solutions to make your life easier.
-              </h5>
-            </motion.div>
+            <h2 className="fw-bold mb-3 celebrations-title">
+              Celebrations & Solutions, <br /> Under One Roof ✨
+            </h2>
+            <h5 className="lead celebrations-text">
+              From mehndi design to wedding décor, event planning, and even{" "}
+              <span className="highlight">RO water services</span>, we provide
+              complete solutions to make your life easier.
+            </h5>
           </Col>
 
-          {/* Right Cards */}
           <Col md={6}>
             <Row className="g-4">
-              {features.map((f, i) => (
-                <Col xs={6} key={i}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.2, duration: 0.6 }}
-                  >
-                    <Card className="celebration-card shadow-sm text-center">
-                      <Card.Body>
-                        <motion.div
-                          className="icon-wrapper mb-3"
-                          whileHover={{ scale: 1.2, rotate: 15 }}
-                          transition={{ type: "spring", stiffness: 200 }}
-                        >
-                          {f.icon}
-                        </motion.div>
-                        <h6 className="fw-semibold">{f.title}</h6>
-                        <p className="text-small">{f.text}</p>
-                      </Card.Body>
-                    </Card>
-                  </motion.div>
+              {slides.map((s) => (
+                <Col xs={6} key={s.title}>
+                  <Card className="celebration-card theme-surface shadow-sm text-center">
+                    <Card.Body>
+                      <div className="icon-wrapper mb-3">
+                        {iconMap[s.title] ?? <FaAlignJustify />}
+                      </div>
+                      <h6 className="fw-semibold card-title-gold">{s.title}</h6>
+                      <p className="text-small card-text-contrast">{s.text}</p>
+                      <Button
+                        size="sm"
+                        className="btn-learn"
+                        onClick={() => openWithSlide(s)}
+                      >
+                        Learn More
+                      </Button>
+                    </Card.Body>
+                  </Card>
                 </Col>
               ))}
             </Row>

@@ -3,7 +3,13 @@
   background: transparent !important;
   transition: all 0.4s ease;
 }
-
+    .navbar-expand-lg .navbar-nav{
+      align-items: center !important;
+      cursor: pointer;
+    }
+    .navbar-expand-lg .navbar-nav a{
+      text-decoration: none;
+    }
 /* Colored when scrolled */
 .navbar-colored {
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff416c, #ff4b2b) !important;
@@ -18,4 +24,13 @@
 .nav-link-custom:hover {
   color: #ffe27d !important;
   transform: scale(1.1);
+}
+.btn-as-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.gallery-button {
+  text-align: left!;
 }
