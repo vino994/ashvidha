@@ -24,7 +24,7 @@ export default function NavbarComponent() {
       <Container>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
           <Navbar.Brand href="#" className="fw-bold fs-4 text-white">
-            ✨ Ashvidha&apos;s
+            ✨ Ashvitha&apos;s
           </Navbar.Brand>
         </motion.div>
 

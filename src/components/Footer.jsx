@@ -58,7 +58,7 @@ const sendEmail = (e) => {
               transition={{ duration: 0.6 }}
               className="footer-brand"
             >
-              Ashvidha&apos;s ✨
+              Ashvitha&apos;s ✨
             </motion.h4>
             <p className="footer-text">
               Celebrations & solutions under one roof — where tradition meets
@@ -141,7 +141,7 @@ const sendEmail = (e) => {
         <Row className="align-items-center">
           <Col md={6}>
             <p className="mb-0">
-              © {new Date().getFullYear()} Ashvidha&apos;s. All rights reserved.
+              © {new Date().getFullYear()} Ashvitha&apos;s. All rights reserved.
             </p>
           </Col>
           <Col md={6} className="text-center text-md-end">
