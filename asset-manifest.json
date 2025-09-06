@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashvidha/static/css/main.05376336.css",
-    "main.js": "/ashvidha/static/js/main.0084fbba.js",
+    "main.js": "/ashvidha/static/js/main.a86156c5.js",
     "static/media/sareehero.png": "/ashvidha/static/media/sareehero.6c2ca8a2c0d048b86f9f.png",
     "static/media/wimage (83).jpeg": "/ashvidha/static/media/wimage (83).1a4fb2da7fc6e01e837f.jpeg",
     "static/media/Bridal.jpg": "/ashvidha/static/media/Bridal.7bfb926dd94b96bcc636.jpg",
@@ -97,10 +97,10 @@
     "static/media/wimage (22).jpeg": "/ashvidha/static/media/wimage (22).da91233e19fa7e23707d.jpeg",
     "index.html": "/ashvidha/index.html",
     "main.05376336.css.map": "/ashvidha/static/css/main.05376336.css.map",
-    "main.0084fbba.js.map": "/ashvidha/static/js/main.0084fbba.js.map"
+    "main.a86156c5.js.map": "/ashvidha/static/js/main.a86156c5.js.map"
   },
   "entrypoints": [
     "static/css/main.05376336.css",
-    "static/js/main.0084fbba.js"
+    "static/js/main.a86156c5.js"
   ]
 }
