@@ -6,7 +6,7 @@ import "./Contact.css";
 
 export default function Contact() {
   const ADDRESS_TEXT = "Chennai, Tambaram";
-  const PHONE_TEXT = "+91 8682889813";
+  const PHONE_TEXT = "+917092142179";
   const EMAIL_TEXT = "g.subasri0302@gmail.com";
 
   const items = [

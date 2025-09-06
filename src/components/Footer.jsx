@@ -83,7 +83,7 @@ const sendEmail = (e) => {
   <h5 className="fw-bold">Contact Us</h5>
   <ul className="list-unstyled footer-contact">
     <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
-    <li><FaPhone /> <a href="tel:+918682889813">+918682889813</a></li>
+    <li><FaPhone /> <a href="tel:+917092142179">+917092142179</a></li>
     <li><FaEnvelope /> <a href="mailto:info@ashvidhas.com">g.subasri0302@gmail.com</a></li>
   </ul>
 </Col>
@@ -104,7 +104,7 @@ const sendEmail = (e) => {
       <h5 className="fw-bold">Contact Us</h5>
       <ul className="list-unstyled footer-contact">
         <li><FaMapMarkerAlt /> Chennai, Tambaram</li>
-        <li><FaPhone /> <a href="tel:+918682889813">+918682889813</a></li>
+        <li><FaPhone /> <a href="tel:+917092142179">+917092142179</a></li>
         <li><FaEnvelope /> <a href="mailto:info@ashvidhas.com">g.subasri0302@gmail.com</a></li>
       </ul>
     </div>
